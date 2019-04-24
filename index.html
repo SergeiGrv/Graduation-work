@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Дипломная работа</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" type="text/css" href="slick/slick.css">
+	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
+	<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+	<link rel="manifest" href="site.webmanifest">
+	<link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+	<link rel="stylesheet" type="text/css" href="media-styles.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<script src="jquery-3.3.1.min.js"></script>
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="slick/slick.min.js"></script>
+	<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script src="script.js"></script>
+</head>
+<body>
+	<div class="popup-container">
+		<div class="popup">
+			<input type="text" maxlength="25" placeholder="Введите Имя" class="popup__form-name">
+			<input type="tel" maxlength="25" placeholder="Введите номер телефона" class="popup__form-number">
+			<button type="submit" class="popup__button-submit">Отправить</button>
+		</div>
+	</div>
+	<div class="popup-container-2">
+		<div class="popup-2">
+			<input type="text" maxlength="25" placeholder="Введите Имя" class="popup-2__form-name">
+			<input type="tel" maxlength="25" placeholder="Введите номер телефона" class="popup-2__form-number">
+			<input type="email" maxlength="25" placeholder="Введите адрес эл. почты" class="popup-2__form-mail">
+			<button type="submit" class="popup-2__button-submit">Отправить</button>
+		</div>
+	</div>
+	<header class="fixed-container">
+		<nav>
+			<button type="button" class="nav__button-menu_hidden"></button>
+			<div class="nav__services">Услуги</div>
+			<div class="nav__portfolio"><a href="">Портфолио</a></div>
+			<div class="nav__prices">Стоимость</div>
+			<div class="nav__navigation-menu_hidden">
+				<p>Услуги</p>
+				<p><a href="">Портфолио</a></p>
+				<p>Стоимость</p>
+			</div>
+		</nav>
+		<button type="button" class="header__call-button">Заказать звонок</button>
+		<div class="header__phone-number"><a href="tel:+7(499)955-55-55">+7 (499) 955-55-55</a></div>
+		<button type="button" class="header__call-button_hidden"></button>
+	</header>
+	<section>
+		<div class="main-block">
+		<div class="main-block__symbol-slash_top">&#60;/&#62;</div>
+		<div class="main-block__symbol-braces_top">{ }</div>
+		<div class="main-block__symbol-div_top">&#60;div&#62;</div>
+		<div class="main-block__symbol-bars">#</div>
+		<div class="main-block__description">
+			<h1>Дмитрий Алексеев</h1>
+			<div class="main-block__description__frontend">Frontend-разработчик и веб-верстальщик</div>
+			<button type="button" class="main-block__description__button-findinfo">Узнать больше</button>
+		</div>
+		<div class="main-block__symbol-div_bottom">&#60;div&#62;</div>
+		<div class="main-block__symbol-braces_bottom">{ }</div>
+		<div class="main-block__symbol-slash_bottom">&#60;/&#62;</div>
+	    </div>
+	</section>
+	<main>
+		<div class="main__fixed-container">
+			<div class="main__fixed-container__services">Что я делаю</div>
+			<div class="main__fixed-container__icons">
+				<div class="main__fixed-container__icons__landing">
+					<img alt="Landing-page" src="img/Landing-page.png">
+					<p>Верстка лендинг-страниц <br>и сайтов любой сложности</p>
+				</div>
+				<div class="main__fixed-container__icons__adaptation">
+					<img alt="Adaptation" src="img/Adaptation.png">
+					<p>Адаптивная верстка под все <br>браузеры и устройства</p>
+				</div>
+				<div class="main__fixed-container__icons__frontend">
+					<img alt="Frontend" src="img/Frontend.png">
+					<p>Frontend &mdash; разработка <br>и программирование</p>
+				</div>
+				<div class="main__fixed-container__icons__rework">
+					<img alt="Rework" src="img/Rework.png">
+					<p>Исправление и доработка <br>существующей верстки</p>
+				</div>
+			</div>
+			<div class="main__fixed-container__findprice">
+				<button type="button" class="main__fixed-container__findprice__button">Узнать стоимость</button>
+			</div>
+		</div>
+		<div class="main__fixed-container-2">
+			<div class="main__fixed-container-2__title">Примеры моих работ</div>
+			<div class="main__fixed-container-2__work-examples">
+				<div class="main__fixed-container-2__work-examples__psychologist">
+					<img alt="Psychologist" class="main__fixed-container-2__work-examples__psychologist-pct" src="img/Psychologist.png">
+					<p class="main__fixed-container-2__work-examples__paragraph">Сайт психолога Веры Антоновой</p>
+				</div>
+				<div class="main__fixed-container-2__work-examples__clothes">
+					<img alt="Children-clothes" class="main__fixed-container-2__work-examples__clothes-pct" src="img/Children-clothes.png">
+					<p class="main__fixed-container-2__work-examples__paragraph">Сайт магазина детской одежды</p>
+				</div>
+				<div class="main__fixed-container-2__work-examples__fishing">
+					<img alt="Fishing" class="main__fixed-container-2__work-examples__fishing-pct" src="img/Fishing.png">
+					<p class="main__fixed-container-2__work-examples__paragraph">Сайт магазина &laquo;Рыболов&raquo;</p>
+				</div>
+				<div class="main__fixed-container-2__work-examples__fishing">
+					<img alt="Fishing" class="main__fixed-container-2__work-examples__fishing-pct" src="img/Fishing.png">
+					<p class="main__fixed-container-2__work-examples__paragraph">Сайт магазина &laquo;Рыболов&raquo;</p>
+				</div>
+			</div>
+			<div class="main__fixed-container-2__order">
+				<button type="submit" class="main__fixed-container-2__order-button">Заказать проект</button>
+			</div>
+		</div>
+		<div class="main__advertisement">
+			<div class="main__advertisement__symbol-braces_top">{ }</div>
+			<div class="main__advertisement__symbol-bars">#</div>
+			<div class="main__advertisement__announcement">
+				<div class="main__advertisement__announcement__statement">Адаптивная вёрстка под все устройства <br>и браузеры от 1000 рублей всего за 4 часа.*</div>
+				<div class="main__advertisement__announcement__note">* Срок и стоимость могут отличаться от заявленных и рассчитываются индивидуально, <br>в зависимости от сложных задач.</div>
+			</div>
+			<div class="main__advertisement__symbol-slash">&#60;/&#62;</div>
+			<div class="main__advertisement__symbol-braces_bottom">{ }</div>
+			<div class="main__advertisement__div">&#60;div&#62;</div>
+		</div>
+		<div class="main__fixed-container-3">
+			<div class="main__fixed-container-3__nav">
+				<p class="main__fixed-container-3__nav__paragraph">Услуги</p>
+				<p class="main__fixed-container-3__nav__paragraph">Портфолио</p>
+				<p class="main__fixed-container-3__nav__paragraph">Стоимость</p>
+			</div>
+			<div class="main__fixed-container-3__contacts">
+				<div class="main__fixed-container-3__contacts__phone">
+					<i class="fa fa-phone"></i>
+				</div>
+				<div class="main__fixed-container-3__contacts__phone-call"><a href="tel:+7(499)955-55-55">+7 (499) 955-55-55</a></div>
+				<div class="main__fixed-container-3__contacts__message">
+					<i class="fa fa-envelope"></i>
+				</div>
+				<div class="main__fixed-container-3__contacts__mail"><a href="mailto:dmitry@alekseev.com">dmitry@alekseev.com</a></div>
+			</div>
+			<div class="main__fixed-container-3__contacts__button-sn">
+				<button type="submit" class="main__fixed-container-3__call-button">Заказать звонок</button>
+				<div class="main__fixed-container-3__social-networks">
+					<div class="main__fixed-container-3__social-networks__vk"></div>
+					<div class="main__fixed-container-3__social-networks__facebook"></div>
+					<div class="main__fixed-container-3__social-networks__twitter"></div>
+					<div class="main__fixed-container-3__social-networks__insta"></div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer>
+		<div class="footer__name">
+			&copy;Дмитрий Алексеев, 2016-2018
+		</div>
+	</footer>
+</body>
+</html>
