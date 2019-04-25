@@ -1,7 +1,7 @@
 ﻿html, body{
 	margin: 0;
 	padding: 0;
-	font-family: Roboto, sans-serif;
+	font-family: Roboto, Arial;
 }
 
 /*Хедер*/ 
@@ -22,6 +22,11 @@ header{
 	padding: 45px 33px 0 0;
 }
 
+.nav__services a{
+	text-decoration: none;
+	color: black;
+}
+
 .nav__portfolio{
 	color: #fc557c;
 	float: left;
@@ -38,8 +43,14 @@ header{
 	padding: 45px 0 0 33px;
 }
 
+.nav__prices a{
+	text-decoration: none;
+	color: black;
+}
+
 .header__call-button{
 	float: right;
+	cursor: pointer;
 }
 
 .header__phone-number{
@@ -48,9 +59,6 @@ header{
 	font-weight: bold;
 	float: right;
 	padding-top: 38px;
-}
-
-.header__phone-number a{
 	color: black;
 	text-decoration: none;
 }
@@ -67,7 +75,7 @@ header{
 	margin-top: 29px;
 }
 
-.nav__button-menu_hidden{
+.header__button-menu_hidden{
 	font-size: 25px;
 	position: absolute;
 	top: 32px;
@@ -80,7 +88,7 @@ header{
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-.nav__button-menu_hidden:before{
+.header__button-menu_hidden:before{
 	content:"\f0c9";
 	font-family: FontAwesome;
 	font-size: 40px;
@@ -115,7 +123,7 @@ header{
     color: transparent;
 }
 
-.nav__navigation-menu_hidden{
+.header__navigation-menu_hidden{
 	background-color: rgb(255, 255, 255);
 	width: 140px;
 	display: none;
@@ -125,6 +133,11 @@ header{
 	z-index: 1;
 	border: 1px solid rgb(248, 35, 111);
 	padding: 20px;
+}
+
+.header__navigation-menu_hidden__services, .header__navigation-menu_hidden__price {
+	text-decoration: none;
+	color: black;
 }
 
 /*Блок с картинкой*/
@@ -174,10 +187,8 @@ header{
             transform: rotate(20deg);
     font-weight: bold;
     -webkit-transition: -webkit-transform 2s;
-    transition: -webkit-transform 2s;
     -o-transition: transform 2s;
     transition: transform 2s;
-    transition: transform 2s, -webkit-transform 2s;
 }
 
 .main-block__symbol-div_top{
@@ -198,10 +209,8 @@ header{
             transform: rotate(-20deg);
     font-weight: bold;
     -webkit-transition: -webkit-transform 2s;
-    transition: -webkit-transform 2s;
     -o-transition: transform 2s;
     transition: transform 2s;
-    transition: transform 2s, -webkit-transform 2s;
 }
 
 .main-block__symbol-bars{
@@ -223,10 +232,8 @@ header{
             transform: rotate(20deg);
     font-weight: bold;
     -webkit-transition: -webkit-transform 2s;
-    transition: -webkit-transform 2s;
     -o-transition: transform 2s;
     transition: transform 2s;
-    transition: transform 2s, -webkit-transform 2s;
 }
 
 .main-block__description{
@@ -256,6 +263,7 @@ h1{
 	color: white;
 	font-size: 18px;
 	background-color: #ff4e2e;
+	cursor: pointer;
 }
 
 .main-block__symbol-div_bottom{
@@ -277,10 +285,8 @@ h1{
             transform: rotate(20deg);
     font-weight: bold;
     -webkit-transition: -webkit-transform 2s;
-    transition: -webkit-transform 2s;
     -o-transition: transform 2s;
     transition: transform 2s;
-    transition: transform 2s, -webkit-transform 2s;
 } 
 
 .main-block__symbol-braces_bottom{
@@ -300,10 +306,8 @@ h1{
             transform: rotate(-20deg);
     font-weight: bold;
     -webkit-transition: -webkit-transform 2s;
-    transition: -webkit-transform 2s;
     -o-transition: transform 2s;
     transition: transform 2s;
-    transition: transform 2s, -webkit-transform 2s;
 }
 
 .main-block__symbol-slash_bottom{
@@ -323,10 +327,8 @@ h1{
             transform: rotate(-20deg);
     font-weight: bold;
     -webkit-transition: -webkit-transform 2s;
-    transition: -webkit-transform 2s;
     -o-transition: transform 2s;
     transition: transform 2s;
-    transition: transform 2s, -webkit-transform 2s;
 }
 
 /*Что я делаю*/
@@ -400,8 +402,9 @@ h1{
 	display: -ms-flexbox;
 	display: flex;
 	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    cursor: pointer;
 }
 
 /*Примеры моих работ*/
@@ -447,6 +450,7 @@ h1{
 	color: white;
 	font-size: 18px;
 	background-color: #ff4e2e;
+	cursor: pointer;
 }
 
 body .slick-prev:before{
@@ -497,6 +501,7 @@ body .slick-arrow-prev{
 	top: 48%;
 	left: -30px;
 	outline: none;
+	cursor: pointer;
 }
 
 body .slick-arrow-next{
@@ -515,6 +520,7 @@ body .slick-arrow-next{
 	top: 48%;
 	right: -10px;
 	outline: none;
+	cursor: pointer;
 }
 
 
@@ -532,7 +538,7 @@ body .slick-arrow-next{
 .main__advertisement__symbol-braces_top{
 	font-size: 49px;
 	font-weight: bold;
-	width: 50px;
+	width: 60px;
 	float: left;	
 	-webkit-transform-origin: -40px 300px;	
 	    -ms-transform-origin: -40px 300px;	
@@ -587,7 +593,7 @@ body .slick-arrow-next{
 .main__advertisement__symbol-braces_bottom{
 	font-size: 49px;
 	font-weight: bold;
-	width: 50px;
+	width: 60px;
 	float: right;
 	-webkit-transform-origin: -50px;
 	    -ms-transform-origin: -50px;
@@ -602,9 +608,9 @@ body .slick-arrow-next{
 	font-weight: bold;
 	width: 90px;
 	float: right;
-	-webkit-transform-origin: -200px -850px;
-	    -ms-transform-origin: -200px -850px;
-	        transform-origin: -200px -850px;
+	-webkit-transform-origin: -60px -850px;
+	    -ms-transform-origin: -60px -850px;
+	        transform-origin: -60px -850px;
     -webkit-transform: rotate(20deg);
         -ms-transform: rotate(20deg);
             transform: rotate(20deg);
@@ -626,9 +632,13 @@ body .slick-arrow-next{
 }
 
 .main__fixed-container-3__nav{
-	color: #8993ad;
 	font-size: 18px;
 	padding-top: 71px;
+}
+
+.main__fixed-container-3__nav a{
+	text-decoration: none;
+	color: #8993ad;
 }
 
 .main__fixed-container-3__nav__paragraph{
@@ -649,7 +659,12 @@ body .slick-arrow-next{
 	float: left;
 }
 
-.main__fixed-container-3__contacts__phone-call a, .main__fixed-container-3__contacts__mail a{
+.main__fixed-container-3__contacts__phone-call{
+	color: black;
+	text-decoration: none;
+}
+
+.main__fixed-container-3__contacts__mail a{
 	color: black;
 	text-decoration: none;
 }
@@ -678,6 +693,7 @@ body .slick-arrow-next{
 	font-size: 16px;
 	background-color: white;
 	outline: none;
+	cursor: pointer;
 }
 
 .main__fixed-container-3__social-networks{
@@ -725,16 +741,15 @@ footer{
 	height: 80px;
 	background-color: #31293c;
 	color: white;
-	font-size: 16px;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
 	-webkit-box-pack:center;
-	    -ms-flex-pack:center;
-	        justify-content:center;
+    -ms-flex-pack:center;
+    justify-content:center;
 }
 
-.footer__name{
+small{
 	padding-top: 31px;
 }
 
