@@ -1,6 +1,6 @@
 $(document).ready(function(){
-	$('.nav__button-menu_hidden').click(function(){
-		$('.nav__navigation-menu_hidden').slideToggle('slow');
+	$('.header__button-menu_hidden').click(function(){
+		$('.header__navigation-menu_hidden').slideToggle('slow');
 	});
 
 	$('.main__fixed-container-2__work-examples').slick({
@@ -27,7 +27,6 @@ $(document).ready(function(){
     });
 
 	/*Заказать звонок*/
-
     $('.header__call-button').add($('.main__fixed-container-3__call-button')).add($('.header__call-button_hidden')).click(function(){
 		$('.popup-container').show();
 	});
@@ -36,11 +35,6 @@ $(document).ready(function(){
 		if(event.target == this){
 			$(this).hide();
 		}
-	});
-
-	$('.popup__button-submit').click(function(){
-		$('.popup__form-name').val('');
-		$('.popup__form-number').val('');
 	});
 
 	/*Узнать больше, узнать стоимость, заказать проект*/
@@ -53,10 +47,5 @@ $(document).ready(function(){
 		if(event.target == this){
 			$(this).hide();
 		}
-	});
-
-	$('.popup-2__button-submit').click(function(){
-		$('.popup-2__form-name').val('');
-		$('.popup-2__form-number').val('');
 	});
 });

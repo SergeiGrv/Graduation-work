@@ -24,34 +24,34 @@
 </head>
 <body>
 	<div class="popup-container">
-		<div class="popup">
-			<input type="text" maxlength="25" placeholder="Введите Имя" class="popup__form-name">
-			<input type="tel" maxlength="25" placeholder="Введите номер телефона" class="popup__form-number">
+		<form class="popup">
+			<input type="text" maxlength="25" required placeholder="Введите Имя" pattern="[А-Яа-я]*{1,25}" class="popup__form-name">
+			<input type="tel" maxlength="25" required placeholder="Телефон: 8(xxx)-xxx-xx-xx" pattern="8\([0-9]{3}\)[0-9]{3}-[0-9]{2}-[0-9]{2}" class="popup__form-number">
 			<button type="submit" class="popup__button-submit">Отправить</button>
-		</div>
+		</form>
 	</div>
 	<div class="popup-container-2">
-		<div class="popup-2">
-			<input type="text" maxlength="25" placeholder="Введите Имя" class="popup-2__form-name">
-			<input type="tel" maxlength="25" placeholder="Введите номер телефона" class="popup-2__form-number">
-			<input type="email" maxlength="25" placeholder="Введите адрес эл. почты" class="popup-2__form-mail">
+		<form class="popup-2">
+			<input type="text" maxlength="25" required placeholder="Введите Имя" pattern="[А-Яа-я]*{1,25}" class="popup-2__form-name">
+			<input type="tel" maxlength="25" required placeholder="Телефон: 8(xxx)-xxx-xx-xx" pattern="8\([0-9]{3}\)[0-9]{3}-[0-9]{2}-[0-9]{2}" class="popup-2__form-number">
+			<input type="email" maxlength="25" required placeholder="Введите адрес эл. почты" pattern="\S+@[a-z]+.[a-z]+" class="popup-2__form-mail">
 			<button type="submit" class="popup-2__button-submit">Отправить</button>
-		</div>
+		</form>
 	</div>
 	<header class="fixed-container">
 		<nav>
-			<button type="button" class="nav__button-menu_hidden"></button>
-			<div class="nav__services">Услуги</div>
-			<div class="nav__portfolio"><a href="">Портфолио</a></div>
-			<div class="nav__prices">Стоимость</div>
-			<div class="nav__navigation-menu_hidden">
-				<p>Услуги</p>
-				<p><a href="">Портфолио</a></p>
-				<p>Стоимость</p>
-			</div>
+			<div class="nav__services"><a target="_blank" href="#services">Услуги</a></div>
+			<div class="nav__portfolio"><a target="_blank" href="#portfolio">Портфолио</a></div>
+			<div class="nav__prices"><a target="_blank" href="#prices">Стоимость</a></div>
 		</nav>
+		<button type="button" class="header__button-menu_hidden"></button>
+		<div class="header__navigation-menu_hidden">
+			<p><a target="_blank" class="header__navigation-menu_hidden__services" href="#services">Услуги</a></p>
+			<p><a target="_blank" href="#portfolio">Портфолио</a></p>
+			<p><a target="_blank" class="header__navigation-menu_hidden__price" href="#prices">Стоимость</a></p>
+		</div>
 		<button type="button" class="header__call-button">Заказать звонок</button>
-		<div class="header__phone-number"><a href="tel:+7(499)955-55-55">+7 (499) 955-55-55</a></div>
+		<a class="header__phone-number" href="tel:+7(499)955-55-55">+7 (499) 955-55-55</a>
 		<button type="button" class="header__call-button_hidden"></button>
 	</header>
 	<section>
@@ -71,7 +71,7 @@
 	    </div>
 	</section>
 	<main>
-		<div class="main__fixed-container">
+		<div class="main__fixed-container"><a name="services">
 			<div class="main__fixed-container__services">Что я делаю</div>
 			<div class="main__fixed-container__icons">
 				<div class="main__fixed-container__icons__landing">
@@ -94,8 +94,8 @@
 			<div class="main__fixed-container__findprice">
 				<button type="button" class="main__fixed-container__findprice__button">Узнать стоимость</button>
 			</div>
-		</div>
-		<div class="main__fixed-container-2">
+		</a></div>
+		<div class="main__fixed-container-2"><a name="portfolio">
 			<div class="main__fixed-container-2__title">Примеры моих работ</div>
 			<div class="main__fixed-container-2__work-examples">
 				<div class="main__fixed-container-2__work-examples__psychologist">
@@ -118,8 +118,8 @@
 			<div class="main__fixed-container-2__order">
 				<button type="submit" class="main__fixed-container-2__order-button">Заказать проект</button>
 			</div>
-		</div>
-		<div class="main__advertisement">
+		</a></div>
+		<div class="main__advertisement"><a name="prices">
 			<div class="main__advertisement__symbol-braces_top">{ }</div>
 			<div class="main__advertisement__symbol-bars">#</div>
 			<div class="main__advertisement__announcement">
@@ -129,18 +129,18 @@
 			<div class="main__advertisement__symbol-slash">&#60;/&#62;</div>
 			<div class="main__advertisement__symbol-braces_bottom">{ }</div>
 			<div class="main__advertisement__div">&#60;div&#62;</div>
-		</div>
+		</a></div>
 		<div class="main__fixed-container-3">
 			<div class="main__fixed-container-3__nav">
-				<p class="main__fixed-container-3__nav__paragraph">Услуги</p>
-				<p class="main__fixed-container-3__nav__paragraph">Портфолио</p>
-				<p class="main__fixed-container-3__nav__paragraph">Стоимость</p>
+				<p class="main__fixed-container-3__nav__paragraph"><a target="_blank" href="#services">Услуги</a></p>
+				<p class="main__fixed-container-3__nav__paragraph"><a target="_blank" href="#portfolio">Портфолио</a></p>
+				<p class="main__fixed-container-3__nav__paragraph"><a target="_blank" href="#prices">Стоимость</a></p>
 			</div>
 			<div class="main__fixed-container-3__contacts">
 				<div class="main__fixed-container-3__contacts__phone">
 					<i class="fa fa-phone"></i>
 				</div>
-				<div class="main__fixed-container-3__contacts__phone-call"><a href="tel:+7(499)955-55-55">+7 (499) 955-55-55</a></div>
+				<a class="main__fixed-container-3__contacts__phone-call" href="tel:+7(499)955-55-55">+7 (499) 955-55-55</a>
 				<div class="main__fixed-container-3__contacts__message">
 					<i class="fa fa-envelope"></i>
 				</div>
@@ -148,19 +148,19 @@
 			</div>
 			<div class="main__fixed-container-3__contacts__button-sn">
 				<button type="submit" class="main__fixed-container-3__call-button">Заказать звонок</button>
-				<div class="main__fixed-container-3__social-networks">
-					<div class="main__fixed-container-3__social-networks__vk"></div>
-					<div class="main__fixed-container-3__social-networks__facebook"></div>
-					<div class="main__fixed-container-3__social-networks__twitter"></div>
-					<div class="main__fixed-container-3__social-networks__insta"></div>
-				</div>
+				<nav class="main__fixed-container-3__social-networks">
+					<a target="_blank" class="main__fixed-container-3__social-networks__vk" href="https://vk.com/"></a>
+					<a target="_blank" class="main__fixed-container-3__social-networks__facebook" href="https://www.facebook.com/"></a>
+					<a target="_blank" class="main__fixed-container-3__social-networks__twitter" href="https://twitter.com/"></a>
+					<a target="_blank" class="main__fixed-container-3__social-networks__insta" href="https://www.instagram.com/?hl=ru"></a>
+				</nav>
 			</div>
 		</div>
 	</main>
 	<footer>
-		<div class="footer__name">
+		<small class="footer__name">
 			&copy;Дмитрий Алексеев, 2016-2018
-		</div>
+		</small>
 	</footer>
 </body>
 </html>
