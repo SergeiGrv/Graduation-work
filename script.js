@@ -1,6 +1,6 @@
 $(document).ready(function(){
-	$('.nav__button-menu_hidden').click(function(){
-		$('.nav__navigation-menu_hidden').slideToggle('slow');
+	$('.header__button-menu_hidden').click(function(){
+		$('.header__navigation-menu_hidden').slideToggle('slow');
 	});
 
 	$('.main__fixed-container-2__work-examples').slick({
@@ -27,36 +27,32 @@ $(document).ready(function(){
     });
 
 	/*Заказать звонок*/
-
     $('.header__call-button').add($('.main__fixed-container-3__call-button')).add($('.header__call-button_hidden')).click(function(){
 		$('.popup-container').show();
+		$("html,body").addClass("fixed");
 	});
 
 	$('.popup-container').click(function(event){
 		if(event.target == this){
 			$(this).hide();
+			$("html,body").removeClass("fixed");
 		}
-	});
-
-	$('.popup__button-submit').click(function(){
-		$('.popup__form-name').val('');
-		$('.popup__form-number').val('');
 	});
 
 	/*Узнать больше, узнать стоимость, заказать проект*/
 
 	$('.main-block__description__button-findinfo').add($('.main__fixed-container__findprice__button')).add($('.main__fixed-container-2__order-button')).click(function(){
 		$('.popup-container-2').show();
+		$("html,body").addClass("fixed");
 	});
 
 	$('.popup-container-2').click(function(event){
 		if(event.target == this){
 			$(this).hide();
+			$("html,body").removeClass("fixed");
 		}
 	});
 
-	$('.popup-2__button-submit').click(function(){
-		$('.popup-2__form-name').val('');
-		$('.popup-2__form-number').val('');
-	});
+	$('.popup__form-number').add('.popup-2__form-number').mask('8(999) 999-99-99');
+
 });
